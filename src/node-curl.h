@@ -277,7 +277,7 @@ class NodeCurl
 
 	static v8::Handle<v8::Value> getinfo_int(const v8::Arguments & args)
 	{
-		return getinfo<int, v8::Integer>(args);
+		return getinfo<long, v8::Integer>(args);
 	}
 
 	static v8::Handle<v8::Value> getinfo_str(const v8::Arguments & args)
