@@ -43,7 +43,7 @@ class NodeCurlHttppost
 			if (cur->buffer)
 				free(cur->buffer);
 			if (cur->name)
-				free(cur->buffer);
+				free(cur->name);
 			free(cur);
 			cur = next;
 		}
