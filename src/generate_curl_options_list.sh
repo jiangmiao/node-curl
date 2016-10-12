@@ -30,7 +30,7 @@ generate() {
   ) > $root/$name.h
 }
 generate integer_options 'CINIT\((\w+).*LONG' OPT
-generate string_options  'CINIT\((\w+).*OBJECT' OPT
+generate string_options  'CINIT\((\w+).*(STRINGPOINT|OBJECT)' OPT
 
 generate integer_infos 'CURLINFO_(\w+).*LONG' INFO
 generate string_infos 'CURLINFO_(\w+).*STRING' INFO
