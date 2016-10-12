@@ -81,7 +81,7 @@ class NodeCurlHttppost
 			last->contenttype = value;
 			break;
 		    case FILE:
-			last->flags |= HTTPPOST_FILENAME;
+			last->flags |= CURL_HTTPPOST_FILENAME;
 		    case CONTENTS:
 			last->contents = value;
 			last->contentslength = length;
